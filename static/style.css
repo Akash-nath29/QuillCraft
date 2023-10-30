@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #78D6C6;
+    padding: 20px 20px;
+    color: #12484B;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* box-shadow: 10px 10px 50px #12484B; */
+}
+.navbar h1 {
+    color: #12484B;
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar ul li {
+    list-style: none;
+    margin: 2vh;
+}
+.navbar ul li a {
+    color: #12484B;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #F5FCCD;
+    min-height: 80vh;
+    max-height: 120vh;
+    overflow-y: scroll;
+    color: #12484B;
+    padding: 50vh 0 5vh 0;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #419197;
+    color: #F5FCCD;
+}
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.first h2 {
+    margin: 2vh;
+}
+.first ul li {
+    list-style-type: square;
+}
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    margin: 3vh;
+}
+.middle form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer a {
+    color: #F5FCCD;
+}
+.footer .middle form input, #message {
+    margin: 1vh;
+    padding: 1vh;
+    width: 100%;
+    border: 1px solid #F5FCCD;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    color: #F5FCCD;
+}
+.footer .middle form input::placeholder, #message::placeholder {
+    color: #F5FCCD;
+}
+.footer .middle form #message {
+    resize: none;
+}
+.footer .middle form input[type=submit] {
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #F5FCCD;
+    color: #419197;
+}
+.footer .middle form input[type=submit]:hover {
+    background-color: #419197;
+    color: #F5FCCD;
+}
+#noBlogFound {
+    color: #6d6d6d;
+    margin: 5vh;
+}
+#createBlogForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh;
+    width: 70%;
+}
+#createBlogForm input, textarea {
+    margin: 1vh;
+    padding: 10px 20px;
+    width: 100%;
+    border: 1px solid #12484B;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    color: #12484B;
+    /* box-shadow: 5px 5px 000; */
+}
+#createBlogForm input::placeholder, textarea::placeholder {
+    color: #12484B;
+}
+#createBlogForm textarea {
+    resize: none;
+}
+#createBlogForm input[type=submit]{
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #12484B;
+    color: #F5FCCD;
+}
+#createBlogForm input[type=submit]:hover {
+    background-color: #F5FCCD;
+    color: #12484B;
+}
+
+
+#editBlogForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh;
+    width: 70%;
+}
+#editBlogForm input, textarea {
+    margin: 1vh;
+    padding: 10px 20px;
+    width: 100%;
+    border: 1px solid #12484B;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    color: #12484B;
+    /* box-shadow: 5px 5px 000; */
+}
+#editBlogForm input::placeholder, textarea::placeholder {
+    color: #12484B;
+}
+#editBlogForm textarea {
+    resize: none;
+}
+#editBlogForm input[type=submit]{
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #12484B;
+    color: #F5FCCD;
+}
+#editBlogForm input[type=submit]:hover {
+    background-color: #F5FCCD;
+    color: #12484B;
+}
+#blogList {
+    width: 50%;
+}
+#blogList li {
+    margin: 5vh;
+    width: 100%;
+    list-style: none;
+}
+#blogList li .blog {
+    border: 1px solid #12484B;
+    padding: 2vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#blogList a {
+    text-decoration: none;
+    color: #12484B;
+}
+.blogView {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh;
+}
+/* .blogView h1 {
+    margin: 2vh;
+} */
+.blogView p {
+    margin: 2vh;
+}
+.blogView a {
+    text-decoration: none;
+    color: #12484B;
+    margin-top: 5vh;
+}
+.blogView a:hover {
+    text-decoration: underline;
+}

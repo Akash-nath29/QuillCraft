@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Create Blog{% endblock %}
+{% block body %}
+<center><h1 style="margin-top: 5vh;">Create Blog</h1></center>
+<form action="/create" method="post" id="createBlogForm">
+    <input type="text" name="blogTitle" id="blogTitle" placeholder="Blog Title" required>
+    <textarea name="blogContent" id="blogContent" cols="30" rows="20" placeholder="Blog Content" required></textarea>
+    <input type="submit" value="Post">
+</form>
+{% endblock %}

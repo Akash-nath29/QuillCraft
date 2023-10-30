@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Edit Blog{% endblock %}
+{% block body %}
+<center><h1 style="margin-top: 5vh;">Edit Blog</h1></center>
+<form action="{{url_for('editBlog', id=blog.id)}}" method="post" id="editBlogForm">
+    <input type="text" name="blogTitle" id="blogTitle" placeholder="Blog Title" required value="{{blog.blogTitle}}">
+    <textarea name="blogContent" id="blogContent" cols="30" rows="20" placeholder="Blog Content" required>{{blog.blogContent}}</textarea>
+    <input type="submit" value="Post">
+</form>
+{% endblock %}

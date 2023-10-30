@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}{{blog.blogTitle}}{% endblock %}
+{% block body %}
+<div class="blogView">
+    <center>
+        <h1>{{blog.blogTitle}}</h1>
+    </center>
+    <span>{{blog.created_at}}</span>
+    <p>{{blog.blogContent|safe}}</p>
+    <a href="{{url_for('editBlog', id=blog.id)}}">Edit this blog</a>
+</div>
+{% endblock %}

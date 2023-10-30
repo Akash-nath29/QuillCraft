@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block body %}
+{% if blogs %}
+<ul id="blogList">
+    {% for blog in blogs %}
+    <a href="{{url_for('viewBlog', id=blog.id)}}">
+        <li>
+            <div class="blog">
+                <h2>{{blog.blogTitle}}</h2>
+                <span>{{blog.created_at}}</span>
+            </div>
+        </li>
+    </a>
+    {% endfor %}
+</ul>
+{% else %}
+
+<h1 id="noBlogFound">No blogs Here</h1>
+
+{% endif %}
+{% endblock %}
