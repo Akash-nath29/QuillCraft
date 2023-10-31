@@ -21,32 +21,32 @@ QuillCraft is an online blogging application built using Flask. It allows users 
 
 1. Clone this repository:
 
-   ```
+   ```bash
    git clone https://github.com/Akash-nath29/QuillCraft.git
    ```
 
 2. Navigate to the project directory:
 
-   ```
+   ```bash
    cd QuillCraft
    ```
 
 3. Create a virtual environment and activate it:
 
-   ```
+   ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    ```
 
 4. Install the required packages:
 
-   ```
+   ```bash
    pip install -r requirements.txt
    ```
 
 5. Start the application:
 
-   ```
+   ```bash
    flask run
    ```
 
@@ -72,5 +72,3 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 If you have any questions or suggestions, feel free to [contact the creator](https://github.com/Akash-nath29). 📬
 
 ---
-
-Feel free to further personalize the README with more emojis or content as per your preferences. 🚀
