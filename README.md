@@ -70,5 +70,4 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 ## Contact 📧
 
 If you have any questions or suggestions, feel free to [contact the creator](https://github.com/Akash-nath29). 📬
-
 ---
